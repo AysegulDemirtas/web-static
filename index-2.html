@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Responsive Web Tasarımı</title>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+ 
+<style>
+
+/*Sayfa tasarımının yer aldığı kodlar buradan başlıyor.*/
+.anaYapi{
+	width:100%;
+	max-width:960px;
+	height:auto;
+	border:solid #000 1px;
+	margin:10px auto;
+}
+/*-------------------------------Üst Bolüm Başlangıç-----------------------------------*/	
+header{
+	width:100%;
+	height:auto;
+	
+}
+
+/*-------------------------------Üst Bolüm Bitiş-----------------------------------------*/	
+/*-------------------------------Menuler Başlangıç-----------------------------------*/	
+nav{
+	width:100%;
+	height:auto;
+	background:silver;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+
+nav ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+
+nav ul a{
+	
+	background:#0CF;
+	display:block;
+	float:left;
+	width:20%;
+	height:40px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:15px;
+	text-align:center;
+	line-height:40px;
+	color:#000;
+	text-decoration:none;
+	border-right:#333 solid 1px;
+	box-sizing:border-box;/*Eklemiş olduğumuz çizgi alanın genişliğini büyütmez. Alanın içine (genişliğine) dahil olur.*/
+}
+
+nav ul a:hover{
+	background:#06C;
+}
+
+nav ul li:last-child a {
+border:none;
+}
+/*-------------------------------Menuler Bitiş-------------------------------------------*/	
+/*-------------------------------Banner Alanı -------------------------------------------*/	
+.banner{
+	width:100%;
+	background:#06C;
+	margin-bottom:10px;
+	height:auto;
+}
+/*-------------------------------Banner Alanı Bitiş -------------------------------------------*/	
+/*-------------------------------İçerik Alanı Başlangıç -------------------------------------------*/
+.sol-icerik{
+	float:left;
+	width:32%;
+	margin-right:2%;
+	height:auto;
+	margin-bottom:10px;
+}
+
+.orta-icerik{
+	float:left;
+	width:32%;
+	margin-right:2%;
+	height:auto;
+	
+}
+
+.sag-icerik{
+	float:left;
+	width:32%;
+	height:auto;
+	
+}
+
+
+h3{
+	color:#666;
+	background:#09F;
+	font-size:18px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin:0px 0px 10px 0px;
+}
+	
+/*-------------------------------İçerik Alanı Bitiş -------------------------------------------*/	
+
+footer{
+	width:100%;
+	height:40px;
+	background:silver;
+	clear:both;
+	text-align:center;
+	line-height:40px;
+	
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+
+
+/*Iphone yatay ve tablet  (min-width: 480px) ve (max-width: 768px)
+ Yatay tutulan telefonların en geniş çözünürlüğü 768px'dir.*/		
+		
+@media only screen and (max-width: 768px) {
+	
+	
+
+nav ul li a {
+	
+	font-size:85%;
+	width:50%;
+	border:none;
+	
+} 
+
+
+nav ul li:last-child a {
+width:100%;
+}
+
+.banner{
+	margin-bottom:0px;
+} 
+ 
+
+    
+.sol-icerik{ 
+	
+	width:49%;
+	margin-right:2%;
+	
+}    
+.orta-icerik{
+	width:49%;
+	margin:0px;
+}
+
+.sag-icerik img{
+	width:100%;
+}
+.sag-icerik{
+		width:100%;	
+
+}
+
+
+/*----------Dikey telefonların  en geniş çözünürlüğü 479px'dir. ---------*/		
+	
+@media only screen and (max-width: 479px)  {
+	
+	nav ul li a {
+ 	width:100%;
+	text-align:left;
+	margin-bottom:2px;
+	padding-left:2%;
+	
+} 
+
+.sol-icerik,.orta-icerik,.sag-icerik{
+	float:none;
+	width:100%;
+
+}
+
+}
+
+</style>
+</head>
+
+<body>
+<div class="anaYapi">
+		<header>
+        		<img src="resimler/logo.gif" alt="logo">
+        </header>
+        <nav>
+        		<ul>
+                            <li><a href="#">Ana Sayfa</a></li>
+                            <li><a href="#">Hakkımızda</a></li>
+                            <li><a href="#">Servisler</a></li>
+                            <li><a href="#">Şubeler</a></li>
+                            <li><a href="#">İletişim</a></li>
+                </ul>
+        
+        
+        </nav>
+        <div class="banner">
+        		<img src="resimler/banner.jpg" alt="banner">
+        </div>
+       
+                      <aside class="sol-icerik">
+                                  <h3>Sol Bölüm</h3>
+                                  <img src="resimler/solresim.jpg" alt="solresim">
+                      <p>Burası sol bölüm olacak. Burası sol bölüm olacak.Burası sol bölüm olacak. Burası sol bölüm olacak. Burası sol bölüm olacak. Burası sol bölüm olacak. Burası sol bölüm olacak.Burası sol bölüm olacak. Burası sol bölüm olacak. Burası sol bölüm olacak.Burası sol bölüm olacak. Burası sol bölüm olacak. Burası sol bölüm olacak.Burası sol bölüm olacak. Burası sol bölüm olacak.</p>
+                      <p>Burası sol bölümün ikinci paragrafı. Burası sol bölümün ikinci paragrafı.Burası sol bölümün ikinci paragrafı.Burası sol bölümün ikinci paragrafı.Burası sol bölümün ikinci paragrafı.Burası sol bölümün ikinci paragrafı.Burası sol bölümün ikinci paragrafı.</p>
+                      </aside>
+                      
+                      
+                      
+                      <article class="orta-icerik">
+                                     <h3>Orta Bölüm</h3>
+                                    <img src="resimler/orta_resim.jpg" alt="Ortaresim">
+                                    <p>Tasarımdaki orta bölüm burada yer alacak. Tasarımdaki orta bölüm burada yer alacakTasarımdaki orta bölüm burada yer alacak. Tasarımdaki orta bölüm burada yer alacak. Tasarımdaki orta bölüm burada yer alacak. Tasarımdaki orta bölüm burada yer alacakTasarımdaki orta bölüm burada yer alacak</p>
+                                        <p>Tasarımdaki orta bölüm burada yer alacak. Tasarımdaki orta bölüm burada yer alacak. Tasarımdaki orta bölüm burada yer alacak. Tasarımdaki orta bölüm burada yer alacak. Tasarımdaki orta bölüm burada yer alacakTasarımdaki orta bölüm burada yer alacak.</p>
+                                    
+                                    
+                      </article>
+                      
+                      <aside class="sag-icerik">
+                                   <h3>Sag Bölüm</h3>
+                                   <img src="resimler/sagresim.jpg" alt="Sagresim">
+                      				<p>Burada sag bölüm yer alacak. Burada sag bölüm yer alacak. Burada sag bölüm yer alacak. Burada sag bölüm yer alacak. Burada sag bölüm yer alacak. Burada sag bölüm yer alacak. Burada sag bölüm yer alacak.</p>
+                                   <p>Burada sag bölüm yer alacak. Burada sag bölüm yer alacak. Burada sag bölüm yer alacak. Burada sag bölüm yer alacak. Burada sag bölüm yer alacak. Burada sag bölüm yer alacak. Burada sag bölüm yer alacak.</p>
+                      
+                      </aside>
+     
+        <footer>
+        <p>Responsive Web Tasarımı</p>
+        
+        </footer>
+
+
+</div>
+
+
+
+</body>
+</html>

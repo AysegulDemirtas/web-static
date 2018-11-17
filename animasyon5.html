@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style> 
+div
+{
+	  width:100px;
+	  height:50px;
+	  background:red;
+	  color:white;
+	  font-weight:bold;
+	  transition:width 2s;
+	  -webkit-transition:width 2s; 
+	  -moz-transition:width 2s;
+}
+
+#div1 {
+	transition-timing-function: linear;
+	}
+/*Çizgisel geçis. Baslangiç ve bitis hizi ayni.*/
+#div2 {
+	transition-timing-function: ease;
+	}
+/*ease : Animasyon yavas baslar, sonra hizlanir ve kapanis yine yavas olur. */
+#div3 {
+	transition-timing-function: ease-in;
+	}
+/*ease-in : Animasyonun yavas baslamasini saglar. */
+#div4 {
+	transition-timing-function: ease-out;
+	}
+/*ease-out : Animasyonun yavas bitmesini saglar. */
+#div5 {
+	transition-timing-function: ease-in-out;
+}
+/*ease-in-out : Animasyonun baslangiç ve bitis hizi yavaslar. Diger alanlar oldugu gibi kalir.*/
+
+/*cubic-bezier(n,n,n,n) : 0 ile 1 arasinda deger girebildigimiz, geçisleri manuel olarak belirledigimiz kod tipidir.
+steps : Animasyon için adim belirtebilecegimiz geçis tipidir. Örnegin steps(5, end) seklinde ayarlandiginda tüm animasyonun 5 adimda tamamlanmasini saglariz. Geçisler diger efektlere kiyasla daha sert olabilir*/
+
+
+#div1 {-webkit-transition-timing-function: linear;}
+#div2 {-webkit-transition-timing-function: ease;}
+#div3 {-webkit-transition-timing-function: ease-in;}
+#div4 {-webkit-transition-timing-function: ease-out;}
+#div5 {-webkit-transition-timing-function: ease-in-out;}
+
+#div1 {-moz-transition-timing-function: linear;}
+#div2 {-moz-transition-timing-function: ease;}
+#div3 {-moz-transition-timing-function: ease-in;}
+#div4 {-moz-transition-timing-function: ease-out;}
+#div5 {-moz-transition-timing-function: ease-in-out;}
+
+div:hover
+{
+width:300px;
+}
+</style>
+</head>
+<body>
+
+    <div id="div1" style="top:100px">linear</div>
+    <div id="div2" style="top:150px">ease</div>
+    <div id="div3" style="top:200px">ease-in</div>
+    <div id="div4" style="top:250px">ease-out</div>
+    <div id="div5" style="top:300px">ease-in-out</div>
+
+</body>
+</html>
+
+
+
+
+

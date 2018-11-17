@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta  charset= "utf-8">
+<title>Untitled Document</title>
+<style>
+div{
+	
+	width:100px;
+	height:100px;
+	background:red;
+	position:relative;
+	animation:yon 5s infinite;
+	animation-direction:alternate;
+	-webkit-animation:yon 5s infinite;
+	-webkit-animation-direction:alternate;
+}
+@keyframes yon{
+	
+0%{background:red, left:0px;top:0px;}
+25%{background:yellow, left:200px;top:0px;}
+50%{background:blue, left:200px;top:200px;}
+75%{background:green, left:0px;top:2000px;}
+100%{background:red, left:0px;top:0px;}
+
+}
+@-webkit-keyframes yon{
+
+0%{background:red, left:0px;top:0px;}
+25%{background:yellow, left:200px;top:0px;}
+50%{background:blue, left:200px;top:200px;}
+75%{background:green, left:0px;top:2000px;}
+100%{background:red, left:0px;top:0px;}
+
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+
+<div></div>
+
+<h1> Animasyon Direction</h1>
+
+<p></p>
+
+<ul>
+	<li><span class="kal&#animation-name:İsim</li>
+    <li><strong>normal</strong>Animasyon her çalışmasında baştan sona doğru çalışır.yani animasyonun her dönüşünde bastan baslayacak.bu özelliğin başlangıç değerdir.</li>
+    <li><strong>alternate</strong>Animasyon sondan başa hareket eder</li>
+    <li><strong>reverse</strong>Animasyon her döndüğünde geriye doğru oynar.animasyonun her döngüsünden sonra başa gider.</li>
+    <li>animation-timing-function:Hız</li>
+    <li>animation-iteration-count:Sayı</li>
+	<li>animation-direction:Yön</li>
+    <li>animation-delay:Gecikme</li>
+    <li>animation-play-state:Durdurma ve oynatma</li>
+    <li>animation-fill-mode:Bitişten sonraki surum</li>
+	<li>animation</li>
+</ul>    
+  
+
+</body>
+</html>

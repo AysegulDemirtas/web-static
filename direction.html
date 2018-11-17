@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta  charset= "utf-8">
+<title>Untitled Document</title>
+<style>
+div{
+	
+	width:100px;
+	height:100px;
+	background:red;
+	position:relative;
+	-webkit-animation:besinci 5s linear 2s infinite alternate;
+	animation:besinci 5s linear 2s infinite alternate;
+}
+@keyframes besinci{
+	
+0%{background:red, left:0px;top:0px;}
+25%{background:yellow, left:200px;top:0px;}
+50%{background:blue, left:200px;top:200px;}
+75%{background:green, left:0px;top:2000px;}
+100%{background:red, left:0px;top:0px;}
+
+}
+@-webkit-keyframes besinci{
+
+0%{background:red, left:0px;top:0px;}
+25%{background:yellow, left:200px;top:0px;}
+50%{background:blue, left:200px;top:200px;}
+75%{background:green, left:0px;top:2000px;}
+100%{background:red, left:0px;top:0px;}
+
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+
+<div></div>
+
+<h1> Animasyon özellikleri</h1>
+<ul>
+	<li>animation-name:İsim</li>
+    <li>animation-duration:Süre</li>
+    <li>animation-timing-function:Hız</li>
+    <li>animation-iteration-count:Sayı</li>
+	<li>animation-direction:Yön</li>
+    <li>animation-delay:Gecikme</li>
+    <li>animation-play-state:Durdurma ve oynatma</li>
+    <li>animation-fill-mode:Bitişten sonraki surum</li>
+	<li>animation</li>
+</ul>    
+  
+
+</body>
+</html>

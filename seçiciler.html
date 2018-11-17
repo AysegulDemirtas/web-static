@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+
+<style>
+div{
+border:solid 1px #666;
+margin-bottom:10px;	
+width:100%;
+max-width:960px;
+margin:10px auto;
+background:#eee;
+	
+}
+
+div :nth-child(3){
+background:red;	
+}
+
+div p:nth-child(5){/*sondan 4. eleman paragraf ise seç*/
+	background:#F90;
+}
+
+div p:nth-last-child(4){/*sondan 4. eleman paragraf ise seç*/
+	background:#69F;
+}
+
+div p:nth-of-type(4){/*4. sıradaki paragrafı şartsız seç*/
+	background:#F39;
+}
+
+div p:nth-last-of-type(2){/*sondan 2. sıradaki paragrafı şartsız seç*/
+	background:#C0C;	
+}
+
+div p:first-child{/*ilk çocuğu paragrafsa seç*/
+	background:#69C;	
+}
+
+div p:last-child{/*son çocuğu paragrafsa seç*/
+	background:#9C3;	
+}
+
+div p:only-child{/*tek çocuk paragrafsa seç, başka çocuk olmayacak*/
+	color:yellow;	
+}
+
+div p:only-of-type{/**/
+	color:#FFF;	
+}
+
+div p:first-of-type{/* paragraf özelliği gösteren ilk objeyi seç*/
+	color:#FFF;	
+}
+
+div p:last-of-type{/*paragraf özelliği gösteren son objeyi seç*/
+	color:#FFF;	
+}
+
+</style>
+</head>
+<body>
+
+<div>
+<h1>Başlık</h1>
+<p>bu birinci paragraftır.</p>
+<p>bu ikinci paragraftır.</p>
+</div>
+
+<div>
+<h1>Başlık</h1>
+<p>bu birinci paragraftır.</p>
+<p>bu ikinci paragraftır.</p>
+</div>
+
+<div>
+<h1>Başlık</h1>
+<p>bu üçüncü paragraftır.</p>
+<p>bu dördücvü paragraftır.</p>
+</div>
+
+<div>
+<h1>Başlık</h1>
+<p>bu beşinci paragraftır.</p>
+<p>bu altıncı paragraftır.</p>
+<p>bu yedinci paragraftır.</p>
+</div>
+
+<div>
+<h1>Başlık</h1>
+<p>bu sekizinci paragraftır.</p>
+</div>
+
+<div>
+<h1>Başlık</h1>
+<p>bu birinci divin birinci paragrafıdır.</p>
+</div>
+
+<div>
+<h1>Başlık</h1>
+<p>bu ikinci divin birinci paragrafıdır.</p>
+</div>
+
+<div>
+<h1>Başlık</h1>
+<p>bu üçüncü divin birinci paragrafıdır.</p>
+</div>
+
+</body>
+</html>

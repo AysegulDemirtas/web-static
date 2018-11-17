@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tabb Menüler</title>
+<script src="../SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<link href="../SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="TabbedPanels1" class="TabbedPanels">
+  <ul class="TabbedPanelsTabGroup">
+    <li class="TabbedPanelsTab" tabindex="0">Ana Sayfa</li>
+    <li class="TabbedPanelsTab" tabindex="0">Hakkımızda</li>
+    <li class="TabbedPanelsTab" tabindex="0">Şubeler</li>
+    <li class="TabbedPanelsTab" tabindex="0">Hizmetler</li>
+    <li class="TabbedPanelsTab" tabindex="0">İletişim</li>
+  </ul>
+  <div class="TabbedPanelsContentGroup">
+    <div class="TabbedPanelsContent">
+<h1>Ana Sayfa</h1>
+<p>Be aware that the CSS for these layouts is heavily commented. If you do most of your work in Design view, have a peek at the code to get tips on working with the CSS for the liquid layouts. You can remove these comments before you launch your site. To learn more about the techniques used in these CSS Layouts, read this article at Adobe's Developer Center</p> </div>
+
+
+    <div class="TabbedPanelsContent">
+<h2>Hakkımızda</h2>
+<p>Because all the columns are floated, this layout uses a clear:both declaration in the .footer rule. This clearing technique forces the .container to understand where the columns end in order to show any borders or background colors you place on the .container. If your design requires you to remove the .footer from the .container, you'll need to use a different clearing method. The most reliable will be to add a <br class="clearfloat" /> or <div class="clearfloat"></div> after your final floated column (but before the .container closes). This will have the same clearing effect.
+</p>
+</div>
+    <div class="TabbedPanelsContent">
+    <h1>Şubeler</h1>
+
+An image placeholder was used in this layout in the .header where you'll likely want to place a logo. It is recommended that you remove the placeholder and replace it with your own linked logo. 
+
+Be aware that if you use the Property inspector to navigate to your logo image using the SRC field (instead of removing and replacing the placeholder), you should remove the inline background and display properties. These inline styles are only used to make the logo placeholder show up in browsers for demonstration purposes. 
+    
+    
+    </div>
+    <div class="TabbedPanelsContent">
+   <h1>Servisler</h1>
+
+<p>These liquid layouts contain an Internet Explorer Conditional Comment (IECC) to correct two issues. 
+
+Browsers are inconsistent in the way they round div sizes in percent-based layouts. If the browser must render a number like 144.5px or 564.5px, they have to round it to the nearest whole number. Safari and Opera round down, Internet Explorer rounds up and Firefox rounds one column up and one down filling the container completely. These rounding issues can cause inconsistencies in some layouts. In this IECC there is a 1px negative margin to fix IE. You may move it to any of the columns (and on either the left or right) to suit your layout needs.</p>
+    
+    
+    
+    </div>
+    <div class="TabbedPanelsContent">
+    <h1>İletişim</h1>
+    <p>This . footer contains the declaration position:relative; to give Internet Explorer 6 hasLayout for the .footer and cause it to clear correctly. If you're not required to support IE6, you may remove it.</p>
+    
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
+</body>
+</html>

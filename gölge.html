@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>:target</title>
+<style>
+
+body{
+	background:silver;
+}
+
+.box{
+width:70%;
+height:200px;
+background:#FFF;
+margin:40px auto;
+}
+
+.box h3{
+text-align:center;
+line-height:200px;
+}
+
+
+.golge{
+	position:relative;
+}
+
+
+.golge:before,.golge:after{
+	z-index:-1;
+	position:absolute;
+	left:10px;
+	content:"";
+	bottom:15px;
+	left:10px;
+	width:50%;
+	top:80%;
+	max-width:300px;
+	background:#777;
+	-webkit-box-shadow:0 15px 10px #777;
+	box-shadow:0 15px 10px #777;
+	-webkit-transform:rotate(-3deg);
+	transform:rotate(-3deg);
+
+}
+
+
+.golge:after{
+-webkit-transform:rotate(-3deg);
+transform:rotate(-3deg);
+right:10px;
+left:auto;
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="box golge">
+<h3>gölge</h3>
+</div>
+
+</body>
+</html>

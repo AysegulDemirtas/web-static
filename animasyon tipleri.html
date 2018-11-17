@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta  charset= "utf-8">
+<title>Untitled Document</title>
+<style>
+div{
+	
+	width:100px;
+	height:100px;
+	background:red;
+	position:relative;
+	animation:bitis 3s;
+	animation-iteration-count:2;
+	-webkit-animation:bitis 3s;
+	-webkit-iteration-count:2;
+	-webkit-animation-fill-mode:forward;
+}
+@keyframes yon{
+	
+0%{background:red, left:0px;top:0px;}
+25%{background:yellow, left:200px;top:0px;}
+50%{background:blue, left:200px;top:200px;}
+75%{background:green, left:0px;top:2000px;}
+100%{background:red, left:0px;top:0px;}
+
+}
+@-webkit-keyframes yon{
+
+0%{background:red, left:0px;top:0px;}
+25%{background:yellow, left:200px;top:0px;}
+50%{background:blue, left:200px;top:200px;}
+75%{background:green, left:0px;top:2000px;}
+100%{background:red, left:0px;top:0px;}
+
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+
+<div></div>
+
+<h1> Animasyon Direction</h1>
+
+<p>Animasyonlar normalde</p>
+
+<ul>
+	
+    <li><strong>normal</strong>Animasyon her çalışmasında baştan sona doğru çalışır.yani animasyonun her dönüşünde bastan baslayacak.bu özelliğin başlangıç değerdir.</li>
+    <li><strong>alternate</strong>Animasyon sondan başa hareket eder.animasyon terse oynarken her adım geriye doğru hareket eder.</li>
+    <li><strong>reverse</strong>Animasyon her döndüğünde geriye doğru oynar.animasyonun her döngüsünden sonra başa gider.</li>
+    <li><strong>none</strong>değeri olarak kullanılan bu değer ile animasyon bittikten sonra geri dönmesini sağlar ve kenditanımlarını alır. animasyonun başındaki animation-duration ile tanımlanan zaman sırasında herhangi bir tanım uygulanmaz.</li>
+    <li><strong>forwards</strong>nimasyon bittikten sonra son anahtar karede animasyonda tanımlanan özellik korunur.none değerinde animasyonun başına dönerken forwards tanımında son    kare özellikleri korunarak kalır.</li>
+	<li><strong>backwards</strong>tanımlanan animasyon durdurma zamanında uygulanan animasyonun ilk karesindeki değer tanımlanır,uygulanan animasyonun ilk karesindeki deger tanımlanır.none değerinde durdurma zamanında herhangi bir tanım.</li>
+    <li><strong>both</strong></li>
+    <li>animation-play-state:Durdurma ve oynatma</li>
+    <li>animation-fill-mode:Bitişten sonraki surum</li>
+	<li>animation</li>
+</ul>    
+  
+
+</body>
+</html>

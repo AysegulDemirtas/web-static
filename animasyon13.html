@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style> 
+
+/* This is the animation code. */
+@-webkit-keyframes example {
+   from { transform: scale(2.0); }
+   to   { transform: scale(1.0); }
+
+
+/* This is the element that we apply the animation to. */
+div {
+   -webkit-animation-name: example;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-timing-function: ease; /* ease is the default */
+   -webkit-animation-delay: 1s;             /* 0 is the default */
+   -webkit-animation-iteration-count: 2;    /* 1 is the default */
+   -webkit-animation-direction: alternate;  /* normal is the default */
+}
+
+</style>
+</head>
+<body>
+</div>
+<p><strong>Note:</strong> The animation-iteration-count property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+<div>
+
+</body>
+</html>
+
+
+
+

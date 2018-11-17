@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta  charset= "utf-8">
+<title>Css animation play</title>
+<style>
+div{
+	
+	width:100px;
+	height:100px;
+	background:red;
+	position:relative;
+	animation:durdur 5s;
+	animation-play-state:running;
+	-webkit-animation::durdur 5s;
+	-webkit-iteration-count:running;
+	
+}
+@keyframes durdur{
+	
+from{left:0px;}
+to{left:600px;}
+
+}
+@-webkit-keyframes durdur{
+
+from{left:0px;}
+to{left:600px;}
+
+}
+
+div:hover{
+
+animation-play-state:paused;
+-webkit-animation-play-state:paused;
+	
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+
+<div></div>
+
+<h1> Animasyon Durdurma</h1>
+
+<p>Animasyonlar normalde</p>
+
+<ul>
+	
+    <li><strong>normal</strong>Animasyon her çalışmasında baştan sona doğru çalışır.yani animasyonun her dönüşünde bastan baslayacak.bu özelliğin başlangıç değerdir.</li>
+    <li><strong>alternate</strong>Animasyon sondan başa hareket eder.animasyon terse oynarken her adım geriye doğru hareket eder.</li>
+    <li><strong>reverse</strong>Animasyon her döndüğünde geriye doğru oynar.animasyonun her döngüsünden sonra başa gider.</li>
+    <li><strong>none</strong>baslangıc değeridir,baslangıc değeri olarak kullanılan bu değer ile animasyon bittikten sonra geri dönmesini sağlar ve kenditanımlarını alır. animasyonun başındaki animation-duration ile tanımlanan zaman sırasında herhangi bir tanım uygulanmaz.</li>
+    <li><strong>forwards</strong>nimasyon bittikten sonra son anahtar karede animasyonda tanımlanan özellik korunur.none değerinde animasyonun başına dönerken forwards tanımında son    kare özellikleri korunarak kalır.</li>
+	<li><strong>backwards</strong>tanımlanan animasyon durdurma zamanında uygulanan animasyonun ilk karesindeki değer tanımlanır,uygulanan animasyonun ilk karesindeki deger tanımlanır.none değerinde durdurma zamanında herhangi bir tanım.</li>
+    <li><strong>both</strong>elemente<strong>forwards</strong> ve <strong>backwards</strong> aynı anda uygulanır. hem animasyonun durdurma zamanında ilk kare özelliklerini alır hemde son kare değerleri elemanda </li>
+    <li>animation-play-state:Durdurma ve oynatma</li>
+    <li>animation-fill-mode:Bitişten sonraki surum</li>
+	<li>animation</li>
+</ul>    
+  
+
+</body>
+</html>
